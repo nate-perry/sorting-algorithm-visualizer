@@ -9,8 +9,12 @@
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.3",
     "react-dom": "^17.0.2",
+<<<<<<< HEAD
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
+=======
+    "react-scripts": "^5.0.0",
+>>>>>>> 0ec3da3ca5e9cc1d34d7fb025b64676040699dbe
     "web-vitals": "^1.1.2"
   },
   "scripts": {

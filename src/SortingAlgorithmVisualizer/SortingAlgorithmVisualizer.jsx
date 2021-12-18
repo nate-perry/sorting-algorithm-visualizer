@@ -18,7 +18,7 @@ var MAX_BAR_HEIGHT = 730;
 var currentSortingAlgorithm = "mergeSort";
 var currentSortingAlgorithmName = "Select A Sorting Algorithm";
 
-// This is the main color of the array bars
+// This is the main color of the array bars.
 const PRIMARY_COLOR = '#09ffd5';
 
 // This is the color of array bars that are being compared throughout the animations
@@ -196,7 +196,8 @@ function arraysAreEqual(arrayOne, arrayTwo) {
   return true;
 }
 
-// Dependency for DropDown Button
+
+//Dependency for DropDown Button
 function setDropDown(itemName){
   var dropdownItems = document.getElementsByClassName(itemName + "-dropdown-item-container");
   for (let i = 0; i < dropdownItems.length; i++) {
