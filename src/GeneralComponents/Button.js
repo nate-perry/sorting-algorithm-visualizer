@@ -36,24 +36,24 @@ export const Button = ({
   if (checkButtonLink !== ''){
     return (
       <Link to={`/${checkButtonLink}`} className='btn-mobile'>
-        <button
+        <div
           className={`btn ${checkButtonStyle} ${checkButtonSize}`}
           onClick={onClick}
           type={type}
         >
           {children}
-        </button>
+        </div>
       </Link>
     );
   } else {
     return (
-      <button
+      <div
         className={`btn ${checkButtonStyle} ${checkButtonSize}`}
         onClick={onClick}
         type={type}
       >
         {children}
-      </button>
+      </div>
     );
   }
   
