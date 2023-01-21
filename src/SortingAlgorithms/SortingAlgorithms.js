@@ -301,3 +301,51 @@ export function getBogoSortAnimations(array) {
   }
 
 //#endregion
+
+
+//#region Radix Sort
+
+export function getMaximum(arr, arrLen) {
+  let maximum = arr[0];
+  for (let i = 1; i < arrLen; i++){
+    if (arr[i] > maximum)
+      maximum = arr[i];
+  }
+  return maximum;
+}
+
+function radixSort(arr, arrLen) {
+  let max = getMaximum(arr, arrLen);
+  let numDigits = max.toString().length();
+
+  let output = [];
+
+  for (let i = 0; i < numDigits; i++){
+    output[i] = [];
+    for (let j = 0; j < arrLen; j++){
+      let numString = arrLen.toString();
+      output[i] += parseInt(numString.charAt(i), 10);
+    }
+  }
+
+  for(let i = 0; i < output.length; i++){
+    let currentArray = array[i];
+    let currentArrayCopy = array[i]
+    currentArray = AgetMergeSortAnimations(currentArray);
+
+    for(let k = 0; k < currentArrayCopy; k++){
+      for (let l = 0; l < currentArray; l++){
+        currentArray[l] = currentArrayCopy[k];
+
+        for (i = 0; i < output.length; i++){
+          currentArray[l] = currentArrayCopy[k];
+        }
+      }
+    }
+    
+  }
+}
+
+
+
+//#endregion
